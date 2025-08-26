@@ -68,11 +68,16 @@ ul a {
     text-decoration: none;
     margin: 1rem;
     transition: color 0.2s;
-  }
+}
 
-  ul a:hover {
-    color: var(--accent-color);
-  }
+.contact_bar a {
+  color:#f5f5f5;
+  transition: none;
+}
+
+.contact_bar a:hover {
+  color: var(--accent-color);
+}
 
 /* Section styles */
 section {
@@ -95,8 +100,36 @@ section h3 {
   text-align: center;
 }
 
+.social_links a:hover {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+/* Skill icons */
+
 .skills li {
   margin: 0 1rem;
+}
+
+.skills-list {
+  margin: 0.5rem 0 0 2rem;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.skills-list a:hover {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+/* experience section styles */
+
+.experience-details li {
+  margin-left: 2rem;
 }
 
 /* Footer styles */
