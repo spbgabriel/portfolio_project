@@ -6,22 +6,27 @@
     <meta name="description" content="Gabriel Brandão's portfolio showcasing web development skills and projects.">
     <link rel="stylesheet" href="portfolio_stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--external font from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Gabriel Brandão - Portfolio</title>
 </head>
 <body>
-    <header>
+    <header role="banner">
         <img src="https://media.licdn.com/dms/image/v2/D4D03AQF1WcTRpKkhEg/profile-displayphoto-crop_800_800/B4DZeehfinGYAI-/0/1750711269960?e=1758153600&v=beta&t=NGcEBDKIbzRhCiWzNP5p3k7ItvDanPw6hG4Ti9imFF8" alt="Gabriel Brandão picture" style="max-width:100%; height:auto; width:300px;">
         <h1>Gabriel Brandão</h1>
         <h2>Web Developer / Front-End Engineer</h2>
-        <nav>
+        <nav role="navigation">
             <ul class="contact_bar">
-                <li><i class="fa-solid fa-phone-volume"></i> <a href="tel:+351913025271">+351 913025271</a></li>
-                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:gabrielspbrandao@outlook.com">gabrielspbrandao@outlook.com</a></li>
-                <li><i class="fa-solid fa-location-dot"></i>  Porto, Portugal</li>
+                <li role="phone link"><i class="fa-solid fa-phone-volume"></i> <a href="tel:+351913025271">+351 913025271</a></li>
+                <li role="email link"><i class="fa-solid fa-envelope"></i> <a href="mailto:gabrielspbrandao@outlook.com">gabrielspbrandao@outlook.com</a></li>
+                <li role="location"><i class="fa-solid fa-location-dot"></i>  Porto, Portugal</li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main role="main content">
         <section class="about_me">
             <h2>About Me</h2>
             <p>Hi, I’m Gabriel Brandão — a passionate web-developer with a knack for turning ideas into impactful experiences.
@@ -56,7 +61,7 @@
             <!--write here the projects that I have done-->
         </section>
     </main>
-    <footer>
+    <footer role="copyrights info">
         <p>&copy; 2025 Gabriel Brandão</p>
     </footer>
 </body>
