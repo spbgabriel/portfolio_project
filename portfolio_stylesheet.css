@@ -40,6 +40,7 @@ header {
 
 header img {
   border-radius: 50%;
+  border: 10px var(--secondary-color) solid;
 }
 
 /* Navigation styles */
@@ -116,52 +117,41 @@ section h2 {
 }
 
 .button_link:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 4px 12px var(--font-color);
+  transform: translateZ(5px);
+  box-shadow: 2px 2px 5px var(--font-color);
 }
 
 /* Skill icons */
 
 .skills {
-  margin-top: 1.5rem;
-}
-
-.skills h4 {
-  font-size: 1.4rem;
-}
-
-.skills li {
-  margin: 0 1rem;
-}
-
-.skills-list {
   display: flex;
-  justify-content: center;
-  margin: 0.5rem 0 0 0.9rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 1rem;
 }
 
-.button_link_skills {
-  display: flex;
-  align-content: center;
-  gap: 0.8rem;
-  padding: 0.8rem 1rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 15px;
-  color: var(--font-color);
-  text-decoration: none;
-  transition: all 150ms linear;
-}
+  .skill_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    
+    border: 2px var(--primary-color) solid;
+    border-radius: 25px;
+  }
 
-.button_link_skills:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 4px 12px var(--font-color);
-}
+    .skill_box img {
+      width: 150px;
+    }
 
-/* experience section styles */
-
-.experience-details li {
-  margin-left: 2rem;
-}
+    .skill_box p {
+      padding: 1rem;
+      border-radius: 20px;
+      color: white;
+      background-color: var(--primary-color);
+    }
 
 /* Footer styles */
 footer {
@@ -210,8 +200,7 @@ footer {
     font-size: 2rem;
   }
 
-  .social_links,
-  .skills-list {
+  .social_links {
     display: flex;
     flex-direction: column;
     justify-content: center;
